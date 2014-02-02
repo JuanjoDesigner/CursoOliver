@@ -1,4 +1,4 @@
-package com.jdesigner.android.hola;
+package com.designer.android.hola;
 
 import android.os.Bundle;
 import android.app.Activity;
