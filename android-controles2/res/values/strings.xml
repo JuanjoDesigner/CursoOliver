@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Controles2</string>
+    <string name="action_settings">Settings</string>
+    <string name="foto_vacia">Sin foto!</string>
+    <string name="lbltexto1">Escribe tus datos: </string>
+    <string name="lbltexto2">Cambiando los campos</string>
+    <string name="nombre">Nombre</string>
+    <string name="clave">Clave</string>
+    <string name="email">Email</string>
+    <string name="telefono">Teléfono</string>
+        
+</resources>
