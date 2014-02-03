@@ -3,8 +3,12 @@
 
     <string name="app_name">Controles3</string>
     <string name="action_settings">Settings</string>
-    <string name="textview">Pruebas con Checkbox!</string>
-    <string name="checkbox1">Check a false</string>
-    <string name="checkbox2">Check a true</string>
+    <string name="textcheckbox">Pruebas con Checkbox!</string>
+    <string name="checkbox1">Check desmarcado</string>
+    <string name="checkbox2">Check marcado</string>
+    <string name="textradiobutton">RadioButton no marcado!</string>
+    <string name="radiobutton1">RadioButton1</string>
+    <string name="radiobutton2">RadioButton2</string>
+    <string name="radiobutton3">RadioButton3</string>
     
 </resources>
