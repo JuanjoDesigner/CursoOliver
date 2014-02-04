@@ -3,6 +3,6 @@
 
     <string name="app_name">Seccion2</string>
     <string name="action_settings">Settings</string>
-	<string name="lblMensaje">Lista de Elementos Fijos:</string>
+	<string name="lblMensaje">Selecciona una opción:</string>
 
 </resources>

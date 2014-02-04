@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
 		
 		// Cargamos el array y el adaptador con los datos del array
 		final String[] valores = getResources().getStringArray(R.array.valores_array);
-		final ArrayAdapter<CharSequence> adaptador = ArrayAdapter.createFromResource(this, R.array.valores_array, android.R.layout.simple_expandable_list_item_1);
+		final ArrayAdapter<CharSequence> adaptador = ArrayAdapter.createFromResource(this, R.array.valores_array, android.R.layout.simple_list_item_1);
 
 		// Cargamos la lista de valores (ListView)
 		listaValores = (ListView)findViewById(R.id.listaValores);
@@ -30,13 +30,13 @@ public class MainActivity extends Activity {
 		final TextView txtMensaje = (TextView)findViewById(R.id.txtMensaje);
 		listaValores.setOnItemSelectedListener(new OnItemSelectedListener() {
 			public void onItemSelected(AdapterView<?> parent,
-		            android.view.View v, int position, long id) {
-		                txtMensaje.setText("Seleccionado: " + valores[position]);
-		        }
+		      android.view.View v, int position, long id) {
+				txtMensaje.setText("Seleccionado: " + valores[position]);
+		    }
 		 
-		        public void onNothingSelected(AdapterView<?> parent) {
-		            txtMensaje.setText("Nada seleccionado");
-		        }
+		    public void onNothingSelected(AdapterView<?> parent) {
+		    	txtMensaje.setText("Nada seleccionado");
+		    }
 		});
 	}
 
