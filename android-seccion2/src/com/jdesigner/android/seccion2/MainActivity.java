@@ -2,41 +2,57 @@ package com.jdesigner.android.seccion2;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
-	private ListView listaValores;
+	
+		private ListView listaValores;
+		
+		private Titular[] valores = new Titular[] {
+		    		new Titular("Título 1", "Subtítulo largo 1"),
+		    		new Titular("Título 2", "Subtítulo largo 2"),
+		    		new Titular("Título 3", "Subtítulo largo 3"),
+		    		new Titular("Título 4", "Subtítulo largo 4"),
+		    		new Titular("Título 5", "Subtítulo largo 5")};
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		// Cargamos el array y el adaptador con los datos del array
-		final String[] valores = getResources().getStringArray(R.array.valores_array);
-		final ArrayAdapter<CharSequence> adaptador = ArrayAdapter.createFromResource(this, R.array.valores_array, android.R.layout.simple_list_item_1);
+		// Cargamos el array de valores y AdaptadorTitular con los datos del array
+		AdaptadorTitulares adaptador = new AdaptadorTitulares(this);
+
+		// Capturamos el control del TextView y de la lista de valores ListView
+		final TextView txtMensaje = (TextView)findViewById(R.id.txtMensaje);
 
 		// Cargamos la lista de valores (ListView)
 		listaValores = (ListView)findViewById(R.id.listaValores);
-		//adaptador.setDropDownViewResource(android.R.layout.simple_expandable_list_item_1);
+
 		listaValores.setAdapter(adaptador);
 		
-		// Capturamos el control del TextView y de la lista de valores ListView
-		final TextView txtMensaje = (TextView)findViewById(R.id.txtMensaje);
-		listaValores.setOnItemSelectedListener(new OnItemSelectedListener() {
-			public void onItemSelected(AdapterView<?> parent,
-		      android.view.View v, int position, long id) {
-				txtMensaje.setText("Seleccionado: " + valores[position]);
-		    }
-		 
-		    public void onNothingSelected(AdapterView<?> parent) {
-		    	txtMensaje.setText("Nada seleccionado");
-		    }
+		listaValores.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> a, View v, int position, long id) {
+				//Alternativa 1:
+			    String opcionSeleccionada = ((Titular)a.getAdapter().getItem(position)).getTitulo();
+			 
+			    //Alternativa 2:
+			    //String opcionSeleccionada = 
+			    //       ((TextView)v.findViewById(R.id.LblTitulo))
+			    //           .getText().toString();
+			 
+			    txtMensaje.setText("Opción seleccionada: " + opcionSeleccionada);
+			}
 		});
 	}
 
@@ -47,4 +63,27 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
+	class AdaptadorTitulares extends ArrayAdapter<Titular> {
+		
+	    Activity context;
+	    
+        AdaptadorTitulares(Activity context) {
+            super(context, android.R.layout.simple_list_item_1, valores);
+            this.context = context;
+        }
+ 
+        public View getView(int position, View convertView, ViewGroup parent) {
+        	LayoutInflater inflater = context.getLayoutInflater();
+        	View item = inflater.inflate(R.layout.listitem_titular, null);
+ 
+        	TextView lblTitulo = (TextView)item.findViewById(R.id.lblTitulo);
+        	lblTitulo.setText(valores[position].getTitulo());
+ 
+        	TextView lblSubtitulo = (TextView)item.findViewById(R.id.lblSubtitulo);
+        	lblSubtitulo.setText(valores[position].getSubtitulo());
+ 
+        	return(item);
+
+        }
+	}
 }
