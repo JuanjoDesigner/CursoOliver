@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Controles Personalizados 2</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblUsuario">Usuario:</string>
+    <string name="lblClave">Contraseña:</string>
+    <string name="btnLogin">Entrar</string>
+    
+</resources>
