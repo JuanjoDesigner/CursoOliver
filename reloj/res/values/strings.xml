@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reloj</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblHora">Hora: </string>
+    <string name="lblMinuto">Minuto: </string>
+    <string name="lblSegundo">Segundo: </string>
+    <string name="btnValidar">Validar</string>
+    <string name="btnReset">Reset</string>
+    <string name="txtSalida">00:00:00</string>
+    
+</resources>

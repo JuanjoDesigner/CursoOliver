@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+   	<LinearLayout
+   	    android:id="@+id/layoutHora"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:orientation="horizontal" >
+    
+       	<TextView
+       	    android:id="@+id/lblHora"
+       	    android:textStyle="bold"
+       	    android:layout_width="75dp"
+       	    android:layout_height="wrap_content"
+       	    android:text="@string/lblHora" />
+       	
+       	<EditText
+    	   	android:id="@+id/txtHora"
+        	android:layout_width="50dp"
+        	android:layout_height="wrap_content"
+        	android:ems="10"
+        	android:inputType="number" />
+
+	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMinuto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    		
+   		<TextView
+        	android:id="@+id/lblMinuto"
+       	    android:textStyle="bold"
+       		android:layout_width="75dp"
+       		android:layout_height="wrap_content"
+       		android:text="@string/lblMinuto" />
+
+   		<EditText
+    	   	android:id="@+id/txtMinuto"
+        	android:layout_width="50dp"
+        	android:layout_height="wrap_content"
+        	android:ems="10"
+        	android:inputType="number" />
+
+	</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSegundo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    
+       	<TextView
+	       	android:id="@+id/lblSegundo"
+       	    android:textStyle="bold"
+        	android:layout_width="75dp"
+        	android:layout_height="wrap_content"
+        	android:text="@string/lblSegundo" />
+       	
+       	<EditText
+   	    	android:id="@+id/txtSegundo"
+       		android:layout_width="50dp"
+       		android:layout_height="wrap_content"
+       		android:ems="10"
+       		android:inputType="number" />
+
+	</LinearLayout>
+
+   	<LinearLayout
+   	    android:id="@+id/layoutButton"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:orientation="horizontal" >
+    
+    	<Button
+        	android:id="@+id/btnValidar"
+     		android:layout_width="125dp"
+        	android:layout_height="wrap_content"
+       		android:text="@string/btnValidar" />
+
+    	<Button
+        	android:id="@+id/btnReset"
+     		android:layout_width="125dp"
+        	android:layout_height="wrap_content"
+       		android:text="@string/btnReset" />
+
+   	</LinearLayout>
+    	
+    <TextView
+        android:id="@+id/txtSalida"
+        android:textSize="60sp"
+        android:textColor="#0000ff"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txtSalida" />
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:textColor="#ff0000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+</LinearLayout>
