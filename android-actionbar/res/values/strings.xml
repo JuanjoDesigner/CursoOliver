@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ActionBar</string>
+    <string name="menu_ajustes">Ajustes</string>
+    <string name="menu_salvar">Salvar</string>
+    <string name="menu_nuevo">Nuevo</string>
+    <string name="texttab1">Texto TAB-1</string>
+    <string name="texttab2">Texto TAB-2</string>
+    <string name="txtinicio">Texto Pantalla Principal</string>
+    
+</resources>
