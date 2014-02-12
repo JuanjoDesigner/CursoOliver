@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item android:id="@+id/menuOpcion1"
+	    android:title="@string/menuOpcion1"
+	    android:icon="@android:drawable/ic_menu_preferences" />
+    
+	<item android:id="@+id/menuOpcion2"
+	    android:title="@string/menuOpcion2"
+	    android:icon="@android:drawable/ic_menu_compass" />
+    
+	<item android:id="@+id/menuOpcion3"
+	    android:title="@string/menuOpcion3"
+	    android:icon="@android:drawable/ic_menu_agenda" >
+		<menu>
+			<group android:id="@+id/menuGrupo3">
+	    
+					<item android:id="@+id/menuOpcion3_1"
+		    			android:title="@string/menuOpcion3_1" />
+
+					<item android:id="@+id/menuOpcion3_2"
+		    			android:title="@string/menuOpcion3_2" />
+	    	</group>
+		</menu>
+	</item>
+</menu>

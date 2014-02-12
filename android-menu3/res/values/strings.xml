@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Menu3</string>
+    <string name="menuOpcion1">Ajustes</string>
+    <string name="menuOpcion2">Mapas</string>
+    <string name="menuOpcion3">Agenda</string>
+    <string name="menuOpcion3_1">Nueva</string>
+    <string name="menuOpcion3_2">Editar</string>
+    <string name="lblMensaje">¡Seleccione una opción del menú!</string>
+
+</resources>
