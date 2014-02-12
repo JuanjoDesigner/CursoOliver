@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Menus1</string>
+    <string name="mnajustes">Ajustes</string>
+    <string name="mnmapa">Mapa</string>
+    <string name="mnagenda">Agenda</string>
+    <string name="mnagendaedicion">Edicion</string>
+    <string name="mnagendaconsulta">Consulta</string>
+    
+    <string name="lblMensage">Nada seleccionado</string>
+
+</resources>
