@@ -14,6 +14,32 @@
         android:id="@+id/lblTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/lblTexto" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+        	android:id="@+id/btnMemoria"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/btnMemoria" />
+
+        <Button
+        	android:id="@+id/btnRaw"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/btnRaw" />
+
+        <Button
+        	android:id="@+id/btnSD"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/btnSD" />
+
+    </LinearLayout>
 
 </LinearLayout>
