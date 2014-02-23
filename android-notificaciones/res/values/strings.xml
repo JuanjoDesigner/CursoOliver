@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notificaciones</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblTitulo">Pulsa el botón para lanzar una notificación</string>
+    <string name="btnTitulo">Notificar</string>
+
+</resources>
